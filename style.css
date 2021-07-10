@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    overflow: hidden;
+}
+ul, ol{
+    list-style: none;
+}
+nav{
+    background-color: rgb(17, 17, 17);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+li{
+    padding: 20px 0px;
+    transition: 0.5s;
+}
+a:hover{
+    color: bisque;
+}
+#bar_icon{
+    color: white;
+    font-size: 25px;
+}
+#bar_icon:hover{
+    color: bisque;
+    cursor: pointer;
+}
+.menu_box{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(17, 17, 17);
+    width: 20%;
+    height: 100vh;
+    padding: 0 60px;
+    margin: 0 -100%;
+    transition: 0.5;
+}
+.open_menu_box{
+    margin: 0;
+    transition: 0.7s;
+}
+
+
+@media (max-width: 575.98px) {
+    .menu_box{
+        width: 100%;
+        padding: 0 0;
+    }
+    a{
+        padding: 0 20px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
